@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+//defining class
+class Recharge{
+    private:
+     int number;
+     double amount;
+     //defining constructor 
+    public:
+     Recharge(){
+         cout<<"Enter number by which to recharge"<<endl;
+         cin>>number;
+         amount=199;
+     }
+     //initialising function to calculate and display
+     void Display(){
+         double total=number*amount;
+         cout<<"----Recharge Details----"<<endl;
+         cout<<"1. Number to recharge: "<<number<<endl;
+         cout<<"2. Amount: "<<amount<<endl;
+         cout<<"3. Total amount: "<<total<<endl;
+     }
+};
+int main(){
+    //calling class and constructor
+    Recharge obj;
+    //using object to call function
+    obj.Display();
+    return 0;
+}
