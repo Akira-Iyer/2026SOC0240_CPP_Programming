@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+class Electricity{
+    private:
+     int units;
+     double rate;
+    public:
+     Electricity(){
+         units=100;
+         rate=5;
+     }
+     void Display(){
+         double total=units*rate;
+         cout<<"----Bill Details----"<<endl;
+         cout<<"1. Units: "<<units<<endl;
+         cout<<"2. Rate: "<<rate<<endl;
+         cout<<"3. Total amount: "<<total<<endl;
+     }
+};
+int main(){
+    Electricity obj;
+    obj.Display();
+    return 0;
+}
